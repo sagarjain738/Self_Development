@@ -1,0 +1,46 @@
+body {
+    background-color: #f1f3f6;
+    height: 320vh;
+}
+
+.circleimage {
+    width: 60px;
+    border-radius: 141px;
+    border: 2px solid gold;
+}
+
+.block1 {
+    text-align: center;
+    display: inline-block;
+    margin: 12px 20px 10px 25px;
+}
+
+.block1 h4 {
+    margin: 2px;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.block {
+    height: 18vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 98.5vw;
+}
+
+.block1:hover {
+    color: #2874f0;
+    cursor: pointer;
+}
+
+.ad {
+    width: 95vw;
+    margin: 8px 8px 8px 12px;
+}
+
+.ad img {
+    width: 97vw;
+}

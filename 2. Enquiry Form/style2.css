@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), #3551b5), url(back.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.block1 {
+    /* margin: 20px; */
+    margin-bottom: 25px;
+    position: relative;
+}
+
+input,
+textarea {
+    /* width: 50%;
+    height: 25px; */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid#fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+#email {
+    width: 100%;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+}
+
+label {
+    color: #fff;
+    height: 100%;
+    position: absolute;
+    /* position: absolute given so its will get inside textbox */
+    padding: 10px;
+    /* padding: 10px given there will be gap between input box and label */
+    left: 0;
+    top: 0;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button {
+    padding: 10px 0;
+    background: transparent;
+    color: #fff;
+    outline: red;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -28px;
+    font-size: 14px;
+}
+
+.row .block1 {
+    flex-basis: 48%;
+}
+
+
+/* textarea {
+    width: 100%;
+    background-color: transparent;
+} */

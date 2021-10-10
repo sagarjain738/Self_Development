@@ -1,0 +1,90 @@
+body {
+    background-color: burlywood;
+}
+
+.mc {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 70px;
+    width: 90vw;
+    height: 90vh;
+    align-items: center;
+}
+
+.maincontainer {
+    border: 1px solid black;
+    height: 50vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.label {
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.textbox {
+    margin: 19px;
+    height: 22px;
+    border-radius: 7px;
+}
+
+#inputName {
+    margin: 6px 0px 0px 45px;
+}
+
+#mobile {
+    width: 22px;
+    margin: 8px 10px 10px 1px;
+}
+
+#no {
+    margin: 10px;
+    height: 22px;
+}
+
+#submit {
+    margin: 105px 50px 50px 130px;
+    color: black;
+    background-color: teal;
+    border-radius: 14px;
+}
+
+#submit:hover {
+    background-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Clist {
+    height: 11vh;
+    background-color: rgb(169, 219, 221);
+}
+
+li {
+    display: flex;
+}
+
+li ul {
+    margin: 10px;
+    padding: 10px;
+}
+
+.radio {
+    margin: 0 5px 0 5px
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}

@@ -1,0 +1,8 @@
+.body3 {
+    display: flex;
+}
+
+.one {
+    margin: 5px;
+    cursor: pointer;
+}
