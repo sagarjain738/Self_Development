@@ -1,0 +1,74 @@
+/* Used to select All the elements(Before elements and after elements) */
+
+*,
+*::before,
+*::after {
+    /* border box is used to size our elements because it makes it easy */
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    /* align-content is used to align the content of entire grid in center not the items */
+    align-content: center;
+    /* align-items: center; */
+    /* we have defined height so that the elemt can align themselves by using specified height  */
+    min-height: 100vh;
+    /* in repeat first parameter is number of colums/rows and second is their respective sizes  */
+    grid-template-columns: repeat(4, 90px);
+    /* minmax specifies the minimum height as first parameter and maximum height as second parameter  */
+    grid-template-rows: minmax(90px, auto) repeat(5, 90px);
+}
+
+
+/* > is used to select all the buttons inside that class */
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.calculator-grid>button:hover {
+    /* background-color: rgba(255, 255, 255, .9); */
+    background-color: transparent;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    /* ************ */
+    grid-column: 1/-1;
+    /* **************** */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .75);
+    /* We will use word wrap to break our word not just at the end of a word or during a space */
+    word-wrap: break-word;
+    /* We will use word break to break all words*/
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
