@@ -81,6 +81,8 @@ textarea:valid~label {
 
 .row .block1 {
     flex-basis: 48%;
+    /* flex-grow: 5; */
+    /* flex-shrink: 2; */
 }
 
 
