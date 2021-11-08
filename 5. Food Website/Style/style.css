@@ -20,7 +20,7 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
-    text-align: center;
+    /* text-align: center; */
 }
 
 header {
@@ -183,46 +183,6 @@ form input:focus {
     background: var(--green);
 }
 
-
-/* 
-.mainBlock {
-    display: flex;
-}
-
-.blocks {
-    margin-top: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0;
-    padding-top: 4rem;
-}
-
-.blocks .content {
-    flex: 1 1 45rem;
-    margin-left: 0%;
-}
-
-.blocks .content h2 {
-    color: var(--green);
-    font-size: 2.5rem;
-    padding: 0.1rem 7%;
-    font-weight: lighter;
-}
-
-.blocks .content h1 {
-    color: var(--black);
-    font-size: 7rem;
-    padding: .1rem 7%;
-}
-
-.blocks .content p {
-    color: var(--ligght-clor);
-    font-size: 2.2rem;
-    padding: .1rem 7%;
-    margin-bottom: 2rem;
-}*/
-
 .btn {
     padding: .8rem 3rem;
     background-color: var(--black);
@@ -235,8 +195,9 @@ form input:focus {
 
 .btn:hover {
     background-color: var(--green);
-    padding-right: 4rem;
-    font-size: 1.8rem;
+    /* padding-right: 3rem;
+    font-size: 1.8rem; */
+    letter-spacing: .1rem;
 }
 
 .menu-container {
@@ -278,6 +239,10 @@ form input:focus {
 .holder img {
     height: 17rem;
     margin: 1rem 0;
+}
+
+.menu-container {
+    text-align: center;
 }
 
 .menu-container h1 {
@@ -336,9 +301,297 @@ form input:focus {
     left: -15rem;
 }
 
+.about {
+    text-align: center;
+}
 
-/* 
-.about .block img {
-    width: 100rem;
-    width: 100rem;
-} */
+.about .about-block img {
+    width: 50rem;
+}
+
+.main-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 3%;
+}
+
+.about h2 {
+    color: var(--green);
+    padding: 2rem 0;
+    font-size: 2rem;
+}
+
+.about-block {
+    flex: 1 1 45rem;
+}
+
+.about h1 {
+    color: var(--black);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-block2 {
+    /* width: 70rem; */
+    line-height: 3.5rem;
+    text-align: left;
+    flex: 1 1 45rem;
+}
+
+.main-block .about-block2 h1 {
+    color: var(--black);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.main-block .about-block2 p {
+    color: var(--ligght-clor);
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+}
+
+.about-info {
+    text-align: center;
+    background-color: #eee;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    margin-right: 1.2rem;
+    padding: 1rem 1rem;
+}
+
+.about-info i {
+    font-size: 2.5rem;
+    color: var(--green);
+    line-height: 1rem;
+}
+
+.about-info span {
+    color: var(--black);
+    font-size: 1.7rem;
+    font-weight: lighter;
+    margin: 1rem;
+}
+
+.btn-holder {
+    margin-top: 2rem;
+}
+
+#learn {
+    padding: .5rem 2rem;
+    background-color: var(--black);
+    color: #fff;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    display: inline-block;
+    /* margin-left: 5rem; */
+}
+
+#learn:hover {
+    background-color: var(--green);
+    padding-right: 3rem;
+    font-size: 1.8rem;
+}
+
+.menu {
+    background-color: #eee;
+    padding: 2rem 8%;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.menu h2 {
+    color: var(--green);
+    font-size: 2rem;
+}
+
+.menu h1 {
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 1rem 0;
+}
+
+.menu-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /* margin: 1.5rem; */
+    gap: .5rem;
+}
+
+.menu-pocket {
+    border: .1rem solid rgba(0, 0, 0, .2);
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    /* Not in Original*/
+    margin: 2rem 1rem;
+    text-align: left;
+}
+
+.menu-pocket .menu-image {
+    /* width: 100%; */
+    height: 25rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    position: relative;
+    /* margin: .5rem 10%; */
+    /* source */
+    /* height: 25rem;
+    width: 100%;
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative; */
+}
+
+.menu-pocket .menu-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* margin: 1.5rem 0; */
+    border-radius: .5rem;
+    /* height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover; */
+}
+
+.menu-pocket .stars i {
+    font-size: 1.7rem;
+    color: var(--green);
+}
+
+.menu-pocket .stars {
+    padding-bottom: 1rem;
+}
+
+.menu-pocket h2 {
+    margin: 1rem 0;
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.menu-pocket h3 {
+    color: var(--ligght-clor);
+    font-size: 1.6rem;
+    font-weight: lighter;
+    padding: 0.5rem 0;
+    line-height: 2.5rem;
+}
+
+.menu-content {
+    padding: 2.5rem;
+    padding-top: 0%;
+}
+
+.menu-content .cost {
+    font-size: 2.5rem;
+    color: var(--green);
+    margin-left: 1.5rem;
+}
+
+.menu .menu-holder .menu-pocket .menu-image .fa-heart {
+    text-align: center;
+    position: absolute;
+    color: var(--black);
+    background-color: #fff;
+    top: 2.5rem;
+    right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+.menu .menu-holder .menu-pocket .menu-image .fa-heart:hover {
+    background-color: var(--green);
+    color: #fff;
+}
+
+.one-review {
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0, 0, 0, .2);
+    padding: 2rem 1%;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.one-review .fa-quote-right {
+    font-size: 6rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: #ccc;
+}
+
+.review {
+    text-align: center;
+    padding: 2rem 10%;
+}
+
+.review h2 {
+    color: var(--green);
+    font-size: 2rem;
+    padding: .5rem 0;
+}
+
+.review h1 {
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 2.5rem;
+}
+
+.review1 {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.review1 .first {
+    height: 8rem;
+    width: 8rem;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.review1 .first img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.review1 .second {
+    margin-left: 2rem;
+}
+
+.review1 .second h2 {
+    color: var(--black);
+    font-size: 2rem;
+}
+
+.review1 .second .stars {
+    color: var(--green);
+    margin-top: .2rem;
+    font-size: 1.3rem;
+}
+
+.one-review .third {
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.one-review .third p {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--ligght-clor);
+}
+
+.info {
+    background-color: var(--ligght-clor);
+}
